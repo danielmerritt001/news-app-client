@@ -14,6 +14,7 @@ import * as newsService from './services/newsService'
 
 // styles
 import './App.css'
+import NewsList from './pages/NewsList/NewsList'
 
 function App() {
   
@@ -22,7 +23,7 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route path="/" element={<NewsList />} />
       </Routes>
     </>
   )
