@@ -7,6 +7,8 @@ import * as newsService from '../../services/newsService'
 // npm modules
 import { useState, useEffect } from 'react'
 
+import styles from './NewsList.module.css'
+
 const NewsList = () => {
 
   const [news, setNews] = useState([])
@@ -21,13 +23,12 @@ const NewsList = () => {
   }
 
   return ( 
-    <>
-      <div>NewsList</div>
+    <main className={styles.main}>
       {news.map(article => {
         return <NewsCard key={article.url} article={article} />
       })
       }
-    </>
+    </main>
   );
 }
 
