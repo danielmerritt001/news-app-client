@@ -3,7 +3,7 @@ import styles from './NewsCard.module.css'
 const NewsCard = (props) => {
   return ( 
       <article className={styles.newsCard}>
-        <header>{props.article.title}</header>
+        <header className={styles.title}>{props.article.title}</header>
         <a href={props.article.url} target='_blank' rel='noreferrer'>
           <img className={styles.image} src={props.article.urlToImage} alt="" />
         </a>
